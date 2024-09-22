@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN \
     apt-get update &&\
@@ -34,4 +34,4 @@ VOLUME [ "/var/lib/samba", "/etc/samba/external" ]
 ADD init.sh /init.sh
 ADD domain.sh /domain.sh
 RUN chmod 755 /init.sh /domain.sh
-CMD /init.sh
+CMD ["/init.sh"]
