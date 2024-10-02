@@ -9,8 +9,6 @@ RUN \
         attr \
         acl \
         samba \
-	samba-common-bin \
-        samba-vfs-modules \
         samba-ad-dc \
         samba-ad-provision \
         smbclient \
@@ -19,16 +17,12 @@ RUN \
         libnss-winbind \
         libpam-winbind \
         krb5-user \
-        krb5-config \
         krb5-kdc \
         supervisor \
         openvpn \
         inetutils-ping \
-        python3-pip \
         python3-setproctitle \
         python3-cryptography \
-        python3-ldb \
-        samba-dsdb-modules \
         nano \
         ldb-tools \
         vim \
